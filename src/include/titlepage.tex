@@ -1,0 +1,44 @@
+\cleartorecto
+\thispagestyle{empty}
+
+\begin{tikzpicture}[overlay,remember picture]
+  \node at (current page.center) [yshift=1cm] {%
+    \begin{minipage}{\textwidth}
+
+      \centering
+
+      \includegraphics[width=7cm]{include/figures/bme_logo}
+      \vspace{0.3cm}
+
+      \bme \\
+      \vik \\
+      \bmemit \\
+      \vspace{3.5cm}
+
+      {\Large \authori \par}
+      \vspace{0.5cm}
+
+      {\Huge\sffamily\bfseries \titlepagetitle \par}
+      \vspace{1cm}
+
+      {\large \vikdoctype \par}
+      \vspace{3.5cm}
+
+      {\Large 
+        \advisors: \\ \vspace{0.3cm}
+        \advisori \\
+        \advisorii \\
+        \advisoriii\par}
+
+      \vspace{1.5cm}
+      {\large \viktdklocation, \viktdkyear\par}
+
+    \end{minipage}};
+\end{tikzpicture}
+
+\cleardoublepage
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

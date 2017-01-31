@@ -1,0 +1,42 @@
+% \input{include/twoside}
+\input{include/oneside}
+
+\usepackage{include/tdk}
+
+\input{include/notation}
+
+\input{include/variables}
+
+\bibliography{references}
+
+\begin{document}
+
+\frontmatter
+
+\thispagestyle{plain}
+\includepdf[noautoscale]{thesis_topic}
+\cleartorecto
+
+\include{include/titlepage}
+
+\tableofcontents
+
+\include{abstract}
+
+\include{declaration}
+
+\mainmatter
+
+\include{chapters/01_introduction}
+\include{chapters/02_background}
+
+\printbibliography
+
+\label{page:last}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: nil
+%%% End:

@@ -1,0 +1,15 @@
+% We actually use `twoside` in oneside mode to avoid renumbering pages.
+\documentclass[11pt,a4paper,twoside,extrafontsizes]{memoir}
+
+\renewcommand*{\baselinestretch}{1.04}
+\isopage
+\setlrmargins{*}{*}{1}
+\checkandfixthelayout
+
+\newif\iftdkoneside
+\tdkonesidetrue
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
